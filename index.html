@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempahan Dyusmie Chalet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tempahan Dyusmie Chalet</h1>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Emel:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="phone">Nombor Telefon:</label>
+            <input type="text" id="phone" name="phone">
+            
+            <label for="room">Jumlah Bilik:</label>
+            <input type="number" id="room" name="room" min="1">
+            
+            <label for="nights">Bilangan Malam:</label>
+            <input type="number" id="nights" name="nights" min="1">
+            
+            <label for="guests">Jumlah Tetamu:</label>
+            <input type="number" id="guests" name="guests">
+            
+            <label for="checkin">Tarikh Masuk:</label>
+            <input type="date" id="checkin" name="checkin">
+            
+            <label for="checkout">Tarikh Keluar:</label>
+            <input type="date" id="checkout" name="checkout">
+            
+            <div class="result" id="totalPrice">Total Harga: RM 0.00</div>
+            
+            <button type="button" class="btn" onclick="calculatePrice()">Kira Harga</button>
+            <button type="button" class="btn btn-wa" onclick="sendNotification()">Hubungi WhatsApp</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
